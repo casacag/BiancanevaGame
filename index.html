@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biancaneve</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="sium" style="color: red; font-size: 15vw; margin-top: 15vh;">Biancaneve VS Regina</h1>
+    <button id="start-button" >
+        <img src="https://cdn2.iconfinder.com/data/icons/sword-pixel/48/pixel_sword-27-512.png" style="width:62px;height:62px;" alt="buttonpng" />
+
+    </button>
+    
+    <div id="game-container">
+        <progress id="LifeQ" value="160" max="160"  class="absolute"></progress>
+        <div id="queen-container"></div>
+        <img src="queenandapple.png" width="120" height="140" class="absolute" id="queen" style="top: 460px; display: none;">
+        <img src="biancaviva.png" width="120" height="140" class="absolute" id="snowwhite">
+          <div id="running">  
+            <img src="mela.jpg" width="120" height="140" class="absolute" id="apple">
+        </div>
+    </div>
+    <div id="timer"></div>
+    <div id="gameStatus" style="color: white; font-size: 2em; position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);"></div>
+    <button id="restart-button" style="display: none;">
+        <img src="restart.webp" style="width:62px;height:62px;" alt="buttonpng" />
+    </button>
+
+
+
+    <audio id="background-music" loop>
+        <source src="background.mp3" type="audio/mp3">
+        Il tuo browser non supporta l'elemento audio.
+    </audio>
+    
+    <audio id="game-over-sound" >
+        <source src="laugh.mp3" type="audio/mp3" >
+        Il tuo browser non supporta l'elemento audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

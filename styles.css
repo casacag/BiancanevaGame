@@ -1,0 +1,81 @@
+body {
+    font-family: impact;
+    text-align: center;
+    background-image: url('bosco.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+#gameStatus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50 vw;
+    color: white; /* Colore del testo */
+}
+
+#restart-button {
+    position: absolute;
+    bottom: 10px; /* Distanza dal bordo inferiore */
+    left: 50%; /* Posizione orizzontale */
+    transform: translateX(-50%);
+}
+
+#restart-button img {
+    width: 100px; /* Larghezza del bottone */
+    height: auto; /* Altezza automatica mantenendo l'aspetto */
+}
+
+#start-button {
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+
+#game-container {
+    position: relative;
+}
+
+
+.absolute {
+    display: none;
+    position: absolute;
+}
+
+#LifeQ {
+    display: none;
+    position: absolute;
+    accent-color: blue;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#timer {
+    position: absolute;
+    top: 10%; /* Posizione verticale */
+    left: 50%; /* Posizione orizzontale */
+    transform: translateX(-50%);
+    font-size: 4em; /* Dimensione del testo */
+    color: black; /* Colore del testo */
+}
+
+
+
+#queen,
+#snowwhite {
+    width: 120px;
+    height: 140px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Stili per schermi di dimensioni ridotte */
+    #queen,
+    #snowwhite {
+        width: 80px;
+        height: 90px;
+    }
+}
