@@ -214,16 +214,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function youLose() {
         var gameStatus = document.getElementById('gameStatus');
-        gameStatus.textContent = "Hai perso!";
-        gameStatus.style.color = "red";
+        
         ShowGameOver("lose"); // Passa il tipo di evento
         StopGame();
     }
     
     function youWin() {
         var gameStatus = document.getElementById('gameStatus');
-        gameStatus.textContent = "Hai vinto!";
-        gameStatus.style.color = "green";
+        
         ShowGameOver("win"); // Passa il tipo di evento
         StopGame();
     }
